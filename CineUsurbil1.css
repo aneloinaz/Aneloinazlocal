@@ -1,0 +1,198 @@
+
+body{
+    background-color:rgb(30, 30, 75);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size:18px
+}
+.pelicula{
+    width: 34%;
+    float:left;
+    padding:10px;
+}
+.Sinopsis1{
+    width:60%;
+    text-align:justify;
+}
+a {
+    text-decoration: none;
+    
+}
+.mainpeliculas{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 'foto foto sinopsis sinopsis horarios horarios'
+                        'foto foto sinopsis sinopsis horarios horarios'
+                        'foto foto trailer trailer trailer trailer'
+                        'foto foto trailer trailer trailer trailer';
+}
+.fotogrid{
+    grid-area: 'foto';
+}
+.sinopsis{
+    grid-area: 'sinopsis';
+}
+
+.horarios{
+    grid-area: 'horarios';
+}
+
+.trailer{
+    grid-area: 'trailer';
+}
+.horas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 49%;
+    justify-content:center;
+    padding-left:10px;
+    
+}
+.trailerhoras{
+    clear: both;
+    display: flex;
+    justify-content: left;
+;
+    
+}
+.a1 {
+    background-color: white;
+    color: black;
+    padding: 16px 32px;margin: 0px 0px 9px 0px;
+    border: 3px solid #e3e000;
+}
+
+.a1:hover {
+    transition-duration: 2s;
+    background-color: #e3e000;
+    color: white;
+}
+
+#img_pelicula{
+    width: 85%;
+    height: auto;
+}
+.trailer1 {
+    
+    width: 49%;
+
+}
+.trailer video{
+    width: 200px;
+}
+#hora{ 
+    justify-content:center;
+    padding-left:10px;
+}
+
+ul {
+    background-color: hsl(0, 0%, 15%);
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    padding: 14px;
+    transition-duration: 0.4s;
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover:not(.active),
+.dropdown:hover .dropbtn {
+    background-color: black;
+    color: white
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: dimgray;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: #e3e000;
+}
+.piepagina{
+    bottom: 0;
+    position:relative;
+    background-color:hsla(0, 0%, 15%, 0.8);
+    width:100%;
+    padding:0;
+}
+#historia{
+    text-align:justify;
+    width:30%;
+    padding-left:25px;
+}
+
+#nosotros{
+    width: 30%;
+    text-align:left;
+    padding-left:25px;
+}
+#Redessocial{
+    width: 30%;
+    padding-left:25px;
+}
+#licencia_img{
+    width: 15%;
+    text-align:left;
+}
+#licenia{
+    width: 92%;text-align:left;
+}
+#licencia p{
+    font-size: small;
+    color:gray;
+    text-align:left;
+}
+
+@media only screen and (max-width: 800px) {
+    .anchura {
+        width: 98%;
+        height: auto;
+        padding-right: 20px;
+        
+    }
+    .trailerhoras{
+        flex-direction: column;
+        align-items:  center;
+    }
+    .horas{
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+
+      
+       
+    }
+}
