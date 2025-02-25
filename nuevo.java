@@ -4,14 +4,7 @@ public class AplicacionZ{
     public static String [][]carteleraS={{"","",""},{"","",""}};
     public static String carteleraD=new String("");
 
-    public static void esperar()
-    {
-        try {
-            Thread.sleep(1999);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
+    
     public static void mostrarMenu()
     {
        /* System.out.println("Cartelera del sabado: " + CarteleraS);
